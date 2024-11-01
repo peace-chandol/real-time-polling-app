@@ -17,4 +17,9 @@ const io = new Server(server, {
 })
 io.on('connection', (socket) => {
     console.log('using socket')
+
+    socket.on('newComment', (res) => {
+        io.emit('displayComment', res)
+    })
+    
 })
