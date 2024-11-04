@@ -10,7 +10,19 @@
     <script src="display.js" defer></script>
 </head>
 <body>
-    <h1>Display</h1>
-    <div class="container"></div>
+    <h1 id="display-text">Display</h1>
+    <div class="set-topic">
+        <h2>Set Topic</h2>
+        <input type="text" class="normal-input" id="input-topic">
+        <button id="save-btn">Save</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <div class="comment-container">
+        <div class="header-comment-container">
+            <h2>Topic: <span id="topic-name"></span></h2>
+            <button id="clear-comment-btn">Clear Comment</button>
+        </div>
+        <div class="inner-comment-container"></div>
+    </div>
 </body>
 </html>

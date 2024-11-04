@@ -23,23 +23,100 @@ h1 {
 }
 
 input {
-    font-size: 4rem;
     outline: none;
+}
+
+.big-input {
+    font-size: 4rem;
     padding: 1rem 2rem;
     margin: 1rem;
 }
 
 button {
-    font-size: 2rem;
-    margin: 2rem;
-    padding: 1rem 2rem;
     cursor: pointer;
     outline: none;
     border-radius: 10%;
     border: none;
 }
 
-button:hover {
+.big-button {
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+
+}
+
+.big-button:hover {
     background-color: #999;
     scale: 0.92;
+}
+
+#display-text {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    background-color: #999;
+}
+
+.set-topic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #999;
+}
+
+.set-topic h2 {
+    margin-right: 2rem;
+}
+
+.set-topic input {
+    margin-right: 1.4rem;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.set-topic button, .header-comment-container button {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.comment-container {
+    margin: 1rem 2rem
+}
+
+.display-each-comment {
+    background-color: #bbb;
+    padding: 1rem 2rem;
+    margin: 0.4rem;
+}
+
+.header-comment-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#clear-comment-btn {
+    font-size: 1.2rem;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#clear-comment-btn:hover {
+    scale: 0.98;
+}
+
+#save-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: red;
+    color: white;
 }
